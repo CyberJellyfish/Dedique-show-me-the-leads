@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--CSS personalizado-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Dedique</title>
+  </head>
+
+  <body>
+    <!--Início do header-->
+    <div class="container-fluid">
+    <h1 class="header">Dedique</h1>
+    </div>
+    
+    <!--Fim do header-->
+    
+    <div class="container">
+       
+            
+
+           
+               
+                    <h4>
+                        Preencha o questionário
+                    </h4>
+                    <!--Formulário Google (ver possibilidade)
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRsJj6Ytb3WKF8VGxZ1ARH0BKtb_k7sSdYblMoLROm7h6SjQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                    -->
+
+                    <!--Formulário personalizado(precisa de DB)-->
+                    <h3>Pergunta 1</h3>
+                    <label><input type="radio" name="p1" value="o1">Opção 1</label><br>
+                    <label><input type="radio" name="p1" value="o2">Opção 2</label><br>
+                    <label><input type="radio" name="p1" value="o3">Opção 3</label><br>
+                    <label><input type="radio" name="p1" value="o4">Opção 4</label><br>
+                    
+                    <h3>Pergunta 2</h3>
+                    <label><input type="radio" name="p2" value="o1">Opção 1</label><br>
+                    <label><input type="radio" name="p2" value="o2">Opção 2</label><br>
+                    <label><input type="radio" name="p2" value="o3">Opção 3</label><br>
+                    <label><input type="radio" name="p2" value="o4">Opção 4</label><br>
+            
+                    <h3>Pergunta 3</h3>
+                    <label><input type="radio" name="p3" value="o1">Opção 1</label><br>
+                    <label><input type="radio" name="p3" value="o2">Opção 2</label><br>
+                    <label><input type="radio" name="p3" value="o3">Opção 3</label><br>
+                    <label><input type="radio" name="p3" value="o4">Opção 4</label><br>
+            
+                    <h3>Pergunta 4</h3>
+                    <label><input type="radio" name="p4" value="o1">Opção 1</label><br>
+                    <label><input type="radio" name="p4" value="o2">Opção 2</label><br>
+                    <label><input type="radio" name="p4" value="o3">Opção 3</label><br>
+                    <label><input type="radio" name="p4" value="o4">Opção 4</label><br>
+
+                    <!--Botão de envio-->
+                    <button type="submit" id="submit" onclick="resultado()">Enviar</button>
+                    <div id="resultado">O resultado aparecerá aqui</div>
+    </div>
+
+    <!--Rodapé-->
+    <section class="rodape">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    Dedique é uma empresa voltada a ...
+                </div>
+
+                <div class="col-md-8">
+                    Siga-nos nas redes sociais!
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
