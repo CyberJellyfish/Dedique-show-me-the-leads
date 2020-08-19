@@ -34,6 +34,12 @@
 
 @media (min-width: 1200px) { ... }
 
+
+/*Smooth Scrolling para descer à sessão*/
+html {
+    scroll-behavior: smooth
+}
+
 body{
     font-family: Poppins, Helvetica;
     color: #7D7987;
@@ -98,8 +104,10 @@ input[type=submit] {
 }
 
 .motivos{
-    text-align: center;
-    font-size: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1em;
+    text-align: justify;
 }
 
 h6{
@@ -118,6 +126,13 @@ img .icones{
     margin: 0 auto;
 }
 
+.abordagem{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1em;
+    text-align: justify;
+}
+
 /*Configurações de padding do conteudo*/
 .padding{
     padding-bottom: 15px;
@@ -129,8 +144,31 @@ img .icones{
     text-align: center;
 }
 
+/*Configurações da seção terapia online*/
+.icones-terapia{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1em;
+    text-align: justify;
+}
 
-/*Configuração do local onde ficam os ícones*/
+
+
+
+/*Configurações da seção sobre nós*/
+.sobre{
+    color: #14128C;
+}
+
+.nossa-missao{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1em;
+    text-align: justify;
+}
+
+
+/*Configuração do local onde ficam os ícones das mídias sociais*/
 .socialmedia{
     text-align: center;
     width: 100%;
