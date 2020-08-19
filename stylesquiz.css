@@ -48,5 +48,5 @@ input[type=submit] {
 
 /*Configuração do resultado do quiz*/
 #resultado{
-    visibility: visible;
+    visibility: hidden;
 }
