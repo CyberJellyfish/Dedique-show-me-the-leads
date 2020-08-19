@@ -1,0 +1,52 @@
+/*Configuração para o questionário aparecer em cima da imagem de fundo*/
+.header-carousel-quiz{
+    min-height: 680px;
+    width: 100%;
+    background: url("images/backgroundquiz.jpg") center center;
+    background-size: cover;
+}
+/*Configuração do texto do formulário*/
+.header-quiz-body{
+    width: 300px;
+    float: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #14128C;     
+}
+/*Configuração para o formulário ser responsivo*/
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Configuração para aparecer o fundo branco no questionário*/
+.container {
+    padding: 25px 10px;
+} 
+  
+  .container > div {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+/*Customização do botão de submit*/
+input[type=submit] {
+    padding:5px 15px; 
+    background:#14128C; 
+    color: white;
+    font-size: 16px;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+/*Configuração do resultado do quiz*/
+#resultado{
+    visibility: visible;
+}

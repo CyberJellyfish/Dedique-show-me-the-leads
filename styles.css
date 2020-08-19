@@ -1,14 +1,87 @@
 
+/*Media Query*/
+@media (min-width: 576px) {
+    .header-carousel{
+        min-height: 500px;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        width: 150px;
+        margin-top: 150px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+
+@media (min-width: 768px) { ... }
+
+
+@media (min-width: 992px) { ... }
+
+
+@media (min-width: 1200px) { ... }
+
 body{
     font-family: Poppins, Helvetica;
     color: #7D7987;
 }
 
-
-/*Configuração quiz*/
-#resultado{
-    visibility: hidden;
+/*Configuração para o formulário aparecer em cima da imagem de fundo*/
+.header-carousel{
+    min-height: 680px;
+    width: 100%;
+    background: url("images/background.svg") center center;
+    background-size: cover;
 }
+
+/*Configuração para o formulário ser responsivo*/
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Configuração para aparecer o fundo branco no formulário*/
+.grid {
+    display: grid;
+    grid: 250px / auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+  
+  .grid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+/*Customização do botão de submit*/
+input[type=submit] {
+    padding:5px 15px; 
+    background:#14128C; 
+    color: white;
+    font-size: 16px;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.header-text-body{
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 150px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #14128C;     
+}
+    
 
 /*Configurações da seção abordagens*/
 .display-5{
@@ -48,18 +121,6 @@ img .icones{
     text-align: center;
 }
 
-/* .area-formulario{
-    background-image: url(images/backgroundteste.svg);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    bottom:0;
-    overflow: auto;
-    background-size: cover;
-} */
-
 
 /*Configuração do local onde ficam os ícones*/
 .socialmedia{
@@ -76,4 +137,3 @@ i{
     height: 100px;
     display: inline-block;
 }
-

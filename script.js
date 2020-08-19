@@ -8,6 +8,9 @@ function resultado(){
     var p5 = document.perguntas.p5.value;
     var p6 = document.perguntas.p6.value;
     var p7 = document.perguntas.p7.value;
+    var p8 = document.perguntas.p8.value;
+    var p9 = document.perguntas.p9.value;
+    var p10 = document.perguntas.p10.value;
 
     //Pontuação de cada opção
     var o1pont = 0;
@@ -92,7 +95,39 @@ function resultado(){
     if(p7 == "o3"){
         o3pont = o3pont +1;    
     }
+
+    //Adiciona ponto na pergunta 8
+    if(p8 == "o1"){
+        o1pont++;    
+    }
+    if(p8 == "o2"){
+        o2pont++;    
+    }
+    if(p8 == "o3"){
+        o3pont = o3pont +1;    
+    }
     
+    //Adiciona ponto na pergunta 9
+    if(p9 == "o1"){
+        o1pont++;    
+    }
+    if(p9 == "o2"){
+        o2pont++;    
+    }
+    if(p9 == "o3"){
+        o3pont = o3pont +1;    
+    }
+    
+      //Adiciona ponto na pergunta 10
+    if(p10 == "o1"){
+        o1pont++;    
+    }
+    if(p10 == "o2"){
+        o2pont++;    
+    }
+    if(p10 == "o3"){
+        o3pont = o3pont +1;    
+    }
    
     //Torna a caixa de resultado visível
     document.getElementById('resultado').style.visibility="visible"; 
@@ -100,14 +135,14 @@ function resultado(){
 
     //Pega a alternativa mais marcada e imprime feedback correspondente na tela
     if(o1pont>o2pont && o1pont>o3pont){
-        resultado.innerHTML = "Você precisa do Psicólogo tipo 1"
+        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que você é uma pessoa que cuida da sua saúde mental! Que legal! Continue assim para ter uma vida boa e feliz! :)"
     }
     if(o2pont>o1pont && o2pont>o3pont ){
-        resultado.innerHTML = "Você precisa do Psicólogo tipo 2"
+        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que há momentos do seu dia que você se sente desanimado. Para isso, descanse e recarregue sua energia fazendo atividades prazerosas. Lembre-se que todos passamos por altos e baixos! :)"
     }
     
     if(o3pont>o1pont && o3pont>o2pont){
-        resultado.innerHTML = "Você precisa do Psicólogo tipo 3"
+        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que você parece meio desanimado ultimamente. Mas lembre-se que você não está sozinho e sempre existe alguém para te ajudar. Bastar dar aquele primeiro passo para conversar com alguém! :) Vamos lá?"
     }
     
 
