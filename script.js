@@ -135,14 +135,17 @@ function resultado(){
 
     //Pega a alternativa mais marcada e imprime feedback correspondente na tela
     if(o1pont>o2pont && o1pont>o3pont){
-        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que você é uma pessoa que cuida da sua saúde mental! Que legal! Continue assim para ter uma vida boa e feliz! :)"
+        resultado.innerHTML = "<br><p> No Caminho certo!</p> Você é uma pessoa que cuida da sua saúde mental. Que legal! Continue assim para ter uma vida boa e feliz! Se precisar de uma companhia na sua jornada de autocuidado, conte com a ajuda da Dedique!";
+        resultado.style.color="green";
     }
     if(o2pont>o1pont && o2pont>o3pont ){
-        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que há momentos do seu dia que você se sente desanimado. Para isso, descanse e recarregue sua energia fazendo atividades prazerosas. Lembre-se que todos passamos por altos e baixos! :)"
+        resultado.innerHTML = "<br><p> Inspira, expira, não pira!</p>Existem momentos no seu dia em que você se sente desanimado. Quando isso acontecer, pare, e recarregue sua energia fazendo atividades prazerosas. Lembre-se que todos passamos por altos e baixos! Sempre que você precisar, nossos psicólogos estarão à disposição para uma consulta.";
+        resultado.style.color="orange";
     }
     
     if(o3pont>o1pont && o3pont>o2pont){
-        resultado.innerHTML = "Fim do quiz! E o seu resultado mostra que você parece meio desanimado ultimamente. Mas lembre-se que você não está sozinho e sempre existe alguém para te ajudar. Bastar dar aquele primeiro passo para conversar com alguém! :) Vamos lá?"
+        resultado.innerHTML = "<br><p> Você não está só! </p>Parece que você tem se sentido para baixo ultimamente. Lembre-se que sempre existe alguém para te ajudar. Basta dar o primeiro passo para conversar com alguém. Vamos lá?";
+        resultado.style.color="red";
     }
     
 
