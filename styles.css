@@ -1,21 +1,4 @@
 
-/*Media Query*/
-@media (min-width: 576px) {
-    .header-carousel{
-        min-height: 500px;
-        width: 100%;
-        background: url("images/background.svg") center center;
-        background-size: cover;
-    }
-    .header-text-body{
-        width: 150px;
-        margin-top: 150px;
-        margin-left: 10px;
-        font-weight: bold;
-        font-size: 1em;
-        color: #14128C;     
-    }
-}
 
 .conteudo_agradecimento{
     background: white;
@@ -26,13 +9,19 @@
 
 }
 
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+
+ }
 
 
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+
+ }
 
 
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px){
+
+}  
 
 
 /*Smooth Scrolling para descer à sessão*/
@@ -182,4 +171,134 @@ i{
     width: 100px;
     height: 100px;
     display: inline-block;
+}
+
+/*Media Query*/
+@media screen and (max-width: 450px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+
+
+@media screen and (max-width: 414px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+
+@media screen and (max-width: 411px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+
+
+@media screen and (max-width: 361px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 2px;
+        font-weight: bold;
+        font-size: 1em;
+        color: #14128C;     
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .header-carousel{
+        min-height: 500px;
+        margin: 0 auto;
+        width: 100%;
+        background: url("images/background.svg") center center;
+        background-size: cover;
+    }
+    .header-text-body{
+        margin-top: 70px;
+        margin-left: 1px;
+        font-weight: bold;
+        font-size: 0.5em;
+        color: #14128C;     
+    }
+    .grid {
+        display: grid;
+        grid: 50%/ auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+      
+      .grid > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 100%;
+        text-align: center;
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    .header-text-body{
+        width: 250px;
+        margin-top: 150px;
+        font-weight: bold;
+        font-size: 1.5em;
+        color: #14128C;     
+    }
 }
