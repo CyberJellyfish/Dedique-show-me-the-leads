@@ -43,8 +43,10 @@
     <body>
 
         <!--Navegação-->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
+        
+
+        <div class="header-carousel">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
@@ -65,11 +67,47 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!--Imagem de fundo-->
-        <img class="img-fluid" src="images/background.svg">
+                    <div class="header-text">
+                        <div class="grid">
+                            <div class="header-text-body">
+                                <p>Faça nosso teste e descubra como está sua saúde mental!</p>
+                                
+                                <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f23-dcac-11ea-91f1-99fb0c9231dc">
+                                    <div class="form-box">
+                                        <label>Seu nome completo:    
+                                            <input
+                                                    name="name"
+                                                    type="text"
+                                                    pattern="^\D{2,}\s[\D\s]{2,}$"
+                                                    title="Digite seu nome completo"
+                                                    required
+                                            />
+                                        </label>
+                                    </div>
+                                        <br>
+                                    <div class="form-box">
+                                        <label>Seu melhor e-mail:
+                                            <input
+                                                name="email"
+                                                type="email"
+                                                title="Digite um email válido"
+                                                required
+                                            />
+                                        </label>
+
+                                    </div>
+                                    <div class="form-box">
+                                        <input name="redirectTo" type="hidden" value="https://gama.academy" />
+                                        <input type="submit" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                   </div>
+             </div>
+            
 
         <!--Conteúdo Abordagens Terapêuticas-->
         <div class="container-fluid padding">
@@ -153,36 +191,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
-          <div class="row">
-              <div class="col-12 area-formulario">
-                  <section class="text-right">
-                    <h4>
-                        Descubra a melhor abordagem terapêutica para você!
-                    </h4>
-    
-                        <form method="POST" action="https://smtl.gama.academy/leads/7f2b6f23-dcac-11ea-91f1-99fb0c9231dc">
-                            <input
-                                name="name"
-                                type="text"
-                                pattern="^\D{2,}\s[\D\s]{2,}$"
-                                title="Digite seu nome completo"
-                                required
-                            />
-                            <input
-                                name="email"
-                                type="email"
-                                title="Digite um email válido"
-                                required
-                            />
-                            <input name="redirectTo" type="hidden" value="https://gama.academy" />
-                            <input type="submit" />
-                        </form>
-                  </section>
-              </div>
-          </div>
-        </div>
-
+        
         <!--Rodapé-->
         <section class="rodape">
             <div class="container-fluid bg-light">
